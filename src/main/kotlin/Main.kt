@@ -1,7 +1,17 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import dao.ProductDAO
+import db_connection.DataSourceFactory
+import entity.Product
+import output.Consola
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun main() {
+    val dataSource = DataSourceFactory.getDS(DataSourceFactory.DataSourceType.HIKARI)
+
+    val consola =Consola()
+
+    val product = Product(2, "Smartphone", 999.99f, "The latest smartphone model", "Apple", "Electronics")
+
+    val productId = ProductDAO(dataSource).createProduct(product,consola)
+
+    println("Product ID: $productId")
+
 }

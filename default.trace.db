@@ -1,0 +1,8 @@
+2024-05-12 17:24:04.916013+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]""INSERT INTO products (id, name, price, description ,brand ,category ) VALUES (?, ?, ? , ? , ? ,?)"""
+Syntax error in SQL statement "[*]""INSERT INTO products (id, name, price, description ,brand ,category ) VALUES (?, ?, ? , ? , ? ,?)"""; SQL statement:
+"INSERT INTO products (id, name, price, description ,brand ,category ) VALUES (?, ?, ? , ? , ? ,?)" [42000-224]
+2024-05-12 17:24:30.815612+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]""INSERT INTO products (id, name, price, description ,brand ,category ) VALUES (?, ?, ? , ? , ? ,?)"
+Syntax error in SQL statement "[*]""INSERT INTO products (id, name, price, description ,brand ,category ) VALUES (?, ?, ? , ? , ? ,?)"; SQL statement:
+"INSERT INTO products (id, name, price, description ,brand ,category ) VALUES (?, ?, ? , ? , ? ,?) [42000-224]
